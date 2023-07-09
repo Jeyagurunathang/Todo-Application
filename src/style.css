@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul > li {
+  list-style-type: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -35,8 +39,49 @@ body {
 }
 
 /* Styling the sidebar components */
+
 .task-header {
-  /* font-size: 15px; */
   font-weight: 600;
   color: #94939b;
+  padding: 20px 30px;
+}
+
+.tasks-types > li {
+  padding: 20px 25px;
+
+  transition: all 0.2s;
+}
+
+.tasks-types > li.task-category--active {
+  background-color: #272833;
+}
+
+.tasks-types > li > a {
+  text-decoration: none;
+
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.tasks-types > li > a > .task-icon {
+  padding: 7px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.tasks-types > li > a > .task-icon--pink {
+  background-color: #f17da5;
+}
+
+.tasks-types > li > a > .task-icon--green {
+  background-color: #7cbaba;
+}
+
+.tasks-types > li:hover {
+  transform: translateY(-5px);
+
+  background-color: #272833;
 }
